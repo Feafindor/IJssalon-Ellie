@@ -1,5 +1,5 @@
 #vraag 2
-prijzen={"aardbei":float(3),"vanille":float(4),"chocolade":float(5)}
+prijzen={"aardbei":3,"vanille":4,"chocolade":5}
 #vraag 3
 aanbieding=(prijzen["aardbei"]*0.8)
 #vraag 4
@@ -22,16 +22,18 @@ print(reclame_tekst4)
 print("\n")
 #vraag 8
 print("Zo ziet het eruit als het onder elkaar staat:")
-for woord in reclame_tekst4:
-    print(woord)
+for el in reclame_tekst4:
+    print(el)
 print("\n")
 #vraag 9
-reclame_tekst5=reclame_tekst3.lower()
-print(reclame_tekst5)
+print("Toch maar liever in kleine letters...")
+for el in reclame_tekst4:
+    print(el.lower())
 print("\n")
 #vraag10
-for woord in reclame_tekst4:
-    if len(woord) > 4:
-        print(woord.upper())
+print("Woorden met meer dan 4 letters staan in hoofdletter")
+for el in reclame_tekst4:
+    if len(el) > 4:
+        print(el.upper())
     else:
-        print(woord.lower())
+        print(el.lower())
