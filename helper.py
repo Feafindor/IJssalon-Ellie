@@ -6,6 +6,7 @@ def decoreer(tekst=""):
     print(lengte * "*")
     print()
 
+'''
 def fooi_pp(bedrag,personen):
     try:
         bedrag_pp=bedrag/personen
@@ -17,3 +18,16 @@ def fooi_pp(bedrag,personen):
 b=int(input("Welk bedrag zit er in de fooienpot? "))
 p=int(input("Over hoeveel mensen moet de pot verdeeld worden? "))
 print(fooi_pp(b,p))
+
+
+
+def som(inkomsten):
+    totaal=0
+    for invoer in inkomsten:
+        totaal+=inkomsten[invoer]
+    return totaal
+'''
+
+def som(inkomsten):
+    totaal=sum(inkomsten.values())
+    return totaal
